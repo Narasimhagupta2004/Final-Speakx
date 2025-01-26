@@ -1,4 +1,4 @@
-const mongoose = require('mongoose'); // Use require to import mongoose
+const mongoose = require('mongoose'); 
 
 const blockSchema = new mongoose.Schema({
   text: {
