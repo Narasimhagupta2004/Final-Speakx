@@ -6,7 +6,7 @@ require('dotenv').config();
 
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'https://final-speakx.onrender.com' }));
 const uri = process.env.MONGO_URI;
 mongoose.connect(uri).then(() => console.log("Database is connected"))
   .catch((err) => {
