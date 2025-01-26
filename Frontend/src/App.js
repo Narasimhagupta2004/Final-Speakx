@@ -11,7 +11,7 @@ const App = () => {
 
   const fetchQuestions = async (searchTitle, currentPage) => {
     try {
-      const response = await axios.get(`https://backend-6fh6.onrender.com/${searchTitle}`, {
+      const response = await axios.get(`https://final-speakx-backend.onrender.com/${searchTitle}`, {
         params: { page: currentPage, limit: 10 },
       });
       setResult(response.data.data); 
